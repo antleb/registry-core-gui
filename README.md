@@ -1,1 +1,1 @@
-# registry-core-api
+# registry-core-gui
