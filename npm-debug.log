@@ -1,0 +1,263 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/opt/local/bin/node',
+1 verbose cli   '/opt/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'ng2-bs3-modal' ]
+2 info using npm@2.14.18
+3 info using node@v4.3.0
+4 verbose install initial load of /Users/stefania/projects/variousJavascript/angular2-RegistryV1/package.json
+5 warn package.json angular2-quickstart@1.0.0 No repository field.
+6 verbose installManyTop reading scoped package data from /Users/stefania/projects/variousJavascript/angular2-RegistryV1/node_modules/a2-in-memory-web-api/package.json
+7 verbose installManyTop reading scoped package data from /Users/stefania/projects/variousJavascript/angular2-RegistryV1/node_modules/angular2/package.json
+8 verbose installManyTop reading scoped package data from /Users/stefania/projects/variousJavascript/angular2-RegistryV1/node_modules/bootstrap/package.json
+9 verbose installManyTop reading scoped package data from /Users/stefania/projects/variousJavascript/angular2-RegistryV1/node_modules/concurrently/package.json
+10 verbose installManyTop reading scoped package data from /Users/stefania/projects/variousJavascript/angular2-RegistryV1/node_modules/es6-promise/package.json
+11 verbose installManyTop reading scoped package data from /Users/stefania/projects/variousJavascript/angular2-RegistryV1/node_modules/es6-shim/package.json
+12 verbose installManyTop reading scoped package data from /Users/stefania/projects/variousJavascript/angular2-RegistryV1/node_modules/lite-server/package.json
+13 verbose installManyTop reading scoped package data from /Users/stefania/projects/variousJavascript/angular2-RegistryV1/node_modules/reflect-metadata/package.json
+14 verbose installManyTop reading scoped package data from /Users/stefania/projects/variousJavascript/angular2-RegistryV1/node_modules/rxjs/package.json
+15 verbose installManyTop reading scoped package data from /Users/stefania/projects/variousJavascript/angular2-RegistryV1/node_modules/systemjs/package.json
+16 verbose installManyTop reading scoped package data from /Users/stefania/projects/variousJavascript/angular2-RegistryV1/node_modules/typescript/package.json
+17 verbose installManyTop reading scoped package data from /Users/stefania/projects/variousJavascript/angular2-RegistryV1/node_modules/typings/package.json
+18 verbose installManyTop reading scoped package data from /Users/stefania/projects/variousJavascript/angular2-RegistryV1/node_modules/zone.js/package.json
+19 verbose installManyTop reading scoped package data from /Users/stefania/projects/variousJavascript/angular2-RegistryV1/node_modules/@angular/common/package.json
+20 verbose installManyTop reading scoped package data from /Users/stefania/projects/variousJavascript/angular2-RegistryV1/node_modules/@angular/compiler/package.json
+21 verbose installManyTop reading scoped package data from /Users/stefania/projects/variousJavascript/angular2-RegistryV1/node_modules/@angular/core/package.json
+22 verbose installManyTop reading scoped package data from /Users/stefania/projects/variousJavascript/angular2-RegistryV1/node_modules/@angular/platform-browser/package.json
+23 verbose installManyTop reading scoped package data from /Users/stefania/projects/variousJavascript/angular2-RegistryV1/node_modules/@angular/platform-browser-dynamic/package.json
+24 info package.json @angular/common@2.0.0-rc.1 No description
+25 info package.json @angular/common@2.0.0-rc.1 No repository field.
+26 info package.json @angular/common@2.0.0-rc.1 No README data
+27 info package.json @angular/compiler@2.0.0-rc.1 No description
+28 info package.json @angular/compiler@2.0.0-rc.1 No repository field.
+29 info package.json @angular/compiler@2.0.0-rc.1 No README data
+30 info package.json @angular/platform-browser-dynamic@2.0.0-rc.1 No description
+31 info package.json @angular/platform-browser-dynamic@2.0.0-rc.1 No repository field.
+32 info package.json @angular/platform-browser-dynamic@2.0.0-rc.1 No README data
+33 info package.json @angular/core@2.0.0-rc.1 No description
+34 info package.json @angular/core@2.0.0-rc.1 No repository field.
+35 info package.json @angular/core@2.0.0-rc.1 No README data
+36 info package.json @angular/platform-browser@2.0.0-rc.1 No description
+37 info package.json @angular/platform-browser@2.0.0-rc.1 No repository field.
+38 info package.json @angular/platform-browser@2.0.0-rc.1 No README data
+39 verbose readDependencies loading dependencies from /Users/stefania/projects/variousJavascript/angular2-RegistryV1/package.json
+40 silly cache add args [ 'ng2-bs3-modal', null ]
+41 verbose cache add spec ng2-bs3-modal
+42 silly cache add parsed spec Result {
+42 silly cache add   raw: 'ng2-bs3-modal',
+42 silly cache add   scope: null,
+42 silly cache add   name: 'ng2-bs3-modal',
+42 silly cache add   rawSpec: '',
+42 silly cache add   spec: 'latest',
+42 silly cache add   type: 'tag' }
+43 silly addNamed ng2-bs3-modal@latest
+44 verbose addNamed "latest" is being treated as a dist-tag for ng2-bs3-modal
+45 info addNameTag [ 'ng2-bs3-modal', 'latest' ]
+46 silly mapToRegistry name ng2-bs3-modal
+47 silly mapToRegistry using default registry
+48 silly mapToRegistry registry https://registry.npmjs.org/
+49 silly mapToRegistry uri https://registry.npmjs.org/ng2-bs3-modal
+50 verbose addNameTag registry:https://registry.npmjs.org/ng2-bs3-modal not in flight; fetching
+51 verbose request uri https://registry.npmjs.org/ng2-bs3-modal
+52 verbose request no auth needed
+53 info attempt registry request try #1 at 3:43:48 PM
+54 verbose request id 95374e793adf7fdf
+55 verbose etag "84E32236QKJPNUDDMP20HLEQY"
+56 http request GET https://registry.npmjs.org/ng2-bs3-modal
+57 http 304 https://registry.npmjs.org/ng2-bs3-modal
+58 verbose headers { date: 'Tue, 17 May 2016 12:43:49 GMT',
+58 verbose headers   via: '1.1 varnish',
+58 verbose headers   'cache-control': 'max-age=300',
+58 verbose headers   etag: '"84E32236QKJPNUDDMP20HLEQY"',
+58 verbose headers   age: '0',
+58 verbose headers   connection: 'keep-alive',
+58 verbose headers   'x-served-by': 'cache-lcy1121-LCY',
+58 verbose headers   'x-cache': 'HIT',
+58 verbose headers   'x-cache-hits': '1',
+58 verbose headers   'x-timer': 'S1463489029.250698,VS0,VE93',
+58 verbose headers   vary: 'Accept-Encoding' }
+59 silly get cb [ 304,
+59 silly get   { date: 'Tue, 17 May 2016 12:43:49 GMT',
+59 silly get     via: '1.1 varnish',
+59 silly get     'cache-control': 'max-age=300',
+59 silly get     etag: '"84E32236QKJPNUDDMP20HLEQY"',
+59 silly get     age: '0',
+59 silly get     connection: 'keep-alive',
+59 silly get     'x-served-by': 'cache-lcy1121-LCY',
+59 silly get     'x-cache': 'HIT',
+59 silly get     'x-cache-hits': '1',
+59 silly get     'x-timer': 'S1463489029.250698,VS0,VE93',
+59 silly get     vary: 'Accept-Encoding' } ]
+60 verbose etag https://registry.npmjs.org/ng2-bs3-modal from cache
+61 verbose get saving ng2-bs3-modal to /Users/stefania/.npm/registry.npmjs.org/ng2-bs3-modal/.cache.json
+62 verbose correctMkdir /Users/stefania/.npm correctMkdir not in flight; initializing
+63 silly addNameTag next cb for ng2-bs3-modal with tag latest
+64 silly addNamed ng2-bs3-modal@0.6.0
+65 verbose addNamed "0.6.0" is a plain semver version for ng2-bs3-modal
+66 silly cache afterAdd ng2-bs3-modal@0.6.0
+67 verbose afterAdd /Users/stefania/.npm/ng2-bs3-modal/0.6.0/package/package.json not in flight; writing
+68 verbose correctMkdir /Users/stefania/.npm correctMkdir not in flight; initializing
+69 verbose afterAdd /Users/stefania/.npm/ng2-bs3-modal/0.6.0/package/package.json written
+70 silly install resolved [ { name: 'ng2-bs3-modal',
+70 silly install resolved     version: '0.6.0',
+70 silly install resolved     description: 'Angular2 Boostrap3 Modal Component',
+70 silly install resolved     main: 'ng2-bs3-modal.js',
+70 silly install resolved     scripts:
+70 silly install resolved      { peer: 'npm install es6-promise@^3.0.2 es6-shim@^0.33.3 reflect-metadata@0.1.2 rxjs@5.0.0-beta.0 zone.js@0.5.14',
+70 silly install resolved        lint: 'tslint ./src/**/*.ts',
+70 silly install resolved        clean: 'rimraf ./bundles/ ./components/ ./directives/ ./ng2-bs3-modal.js ./ng2-bs3-modal.d.ts',
+70 silly install resolved        tsc: 'tsc --project . --declaration',
+70 silly install resolved        'tsc-test': 'tsc --project ./test',
+70 silly install resolved        'tsc-single': 'tsc --project . --rootDir ./src --module system --outFile ./bundles/ng2-bs3-modal.js',
+70 silly install resolved        uglify: 'uglifyjs ./bundles/ng2-bs3-modal.js --output ./bundles/ng2-bs3-modal.min.js',
+70 silly install resolved        bundles: 'npm run tsc-single && npm run uglify',
+70 silly install resolved        build: 'npm run clean && npm run typings && npm run lint && npm run tsc && npm run bundles',
+70 silly install resolved        prepublish: 'npm run build',
+70 silly install resolved        typings: 'typings install',
+70 silly install resolved        test: 'karma start --single-run',
+70 silly install resolved        'test-watch': 'karma start' },
+70 silly install resolved     repository:
+70 silly install resolved      { type: 'git',
+70 silly install resolved        url: 'git+ssh://git@github.com/dougludlow/ng2-bs3-modal.git' },
+70 silly install resolved     keywords: [ 'angular2', 'bootstrap', 'modal', 'component' ],
+70 silly install resolved     author: { name: 'Douglas Ludlow', email: 'doug.ludlow@gmail.com' },
+70 silly install resolved     license: 'ISC',
+70 silly install resolved     bugs: { url: 'https://github.com/dougludlow/ng2-bs3-modal/issues' },
+70 silly install resolved     homepage: 'https://github.com/dougludlow/ng2-bs3-modal#readme',
+70 silly install resolved     devDependencies:
+70 silly install resolved      { '@angular/common': '^2.0.0-rc.1',
+70 silly install resolved        '@angular/compiler': '^2.0.0-rc.1',
+70 silly install resolved        '@angular/core': '^2.0.0-rc.1',
+70 silly install resolved        '@angular/platform-browser': '^2.0.0-rc.1',
+70 silly install resolved        '@angular/platform-browser-dynamic': '^2.0.0-rc.1',
+70 silly install resolved        '@angular/router': '^2.0.0-rc.1',
+70 silly install resolved        bootstrap: '^3.3.6',
+70 silly install resolved        'es6-shim': '^0.35.0',
+70 silly install resolved        jasmine: '^2.4.1',
+70 silly install resolved        jquery: '^2.2.1',
+70 silly install resolved        karma: '^0.13.21',
+70 silly install resolved        'karma-chrome-launcher': '^0.2.2',
+70 silly install resolved        'karma-jasmine': '^0.3.7',
+70 silly install resolved        'karma-phantomjs-launcher': '^1.0.0',
+70 silly install resolved        'karma-spec-reporter': '0.0.24',
+70 silly install resolved        'phantomjs-prebuilt': '2.1.7',
+70 silly install resolved        'reflect-metadata': '^0.1.3',
+70 silly install resolved        rimraf: '^2.5.1',
+70 silly install resolved        rxjs: '5.0.0-beta.6',
+70 silly install resolved        systemjs: '^0.19.23',
+70 silly install resolved        tslint: '^3.7.1',
+70 silly install resolved        typescript: '^1.8.9',
+70 silly install resolved        typings: '^0.7.9',
+70 silly install resolved        'uglify-js': '^2.6.2',
+70 silly install resolved        'zone.js': '^0.6.12' },
+70 silly install resolved     peerDependencies:
+70 silly install resolved      { '@angular/common': '^2.0.0-rc.1',
+70 silly install resolved        '@angular/compiler': '^2.0.0-rc.1',
+70 silly install resolved        '@angular/core': '^2.0.0-rc.1',
+70 silly install resolved        '@angular/platform-browser': '^2.0.0-rc.1',
+70 silly install resolved        '@angular/platform-browser-dynamic': '^2.0.0-rc.1',
+70 silly install resolved        bootstrap: '~3.3.x' },
+70 silly install resolved     gitHead: 'e994278468b07d8e534eb7fcf73ea6297788f49e',
+70 silly install resolved     _id: 'ng2-bs3-modal@0.6.0',
+70 silly install resolved     _shasum: '91566cd90aa2a416f1700e7a96330912e61ef33c',
+70 silly install resolved     _from: 'ng2-bs3-modal@latest',
+70 silly install resolved     _npmVersion: '3.5.3',
+70 silly install resolved     _nodeVersion: '5.5.0',
+70 silly install resolved     _npmUser: { name: 'dougludlow', email: 'doug.ludlow@gmail.com' },
+70 silly install resolved     dist:
+70 silly install resolved      { shasum: '91566cd90aa2a416f1700e7a96330912e61ef33c',
+70 silly install resolved        tarball: 'https://registry.npmjs.org/ng2-bs3-modal/-/ng2-bs3-modal-0.6.0.tgz' },
+70 silly install resolved     maintainers: [ [Object] ],
+70 silly install resolved     _npmOperationalInternal:
+70 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
+70 silly install resolved        tmp: 'tmp/ng2-bs3-modal-0.6.0.tgz_1462832195039_0.7884653995279223' },
+70 silly install resolved     directories: {},
+70 silly install resolved     _resolved: 'https://registry.npmjs.org/ng2-bs3-modal/-/ng2-bs3-modal-0.6.0.tgz',
+70 silly install resolved     readme: 'ERROR: No README data found!' } ]
+71 info install ng2-bs3-modal@0.6.0 into /Users/stefania/projects/variousJavascript/angular2-RegistryV1
+72 info installOne ng2-bs3-modal@0.6.0
+73 verbose installOne of ng2-bs3-modal to /Users/stefania/projects/variousJavascript/angular2-RegistryV1 not in flight; installing
+74 verbose correctMkdir /Users/stefania/.npm/_locks correctMkdir not in flight; initializing
+75 verbose lock using /Users/stefania/.npm/_locks/ng2-bs3-modal-fc2afd563886cea0.lock for /Users/stefania/projects/variousJavascript/angular2-RegistryV1/node_modules/ng2-bs3-modal
+76 silly install write writing ng2-bs3-modal 0.6.0 to /Users/stefania/projects/variousJavascript/angular2-RegistryV1/node_modules/ng2-bs3-modal
+77 verbose unbuild node_modules/ng2-bs3-modal
+78 silly gentlyRm /Users/stefania/projects/variousJavascript/angular2-RegistryV1/node_modules/ng2-bs3-modal is being purged from base /Users/stefania/projects/variousJavascript/angular2-RegistryV1
+79 verbose gentlyRm don't care about contents; nuking /Users/stefania/projects/variousJavascript/angular2-RegistryV1/node_modules/ng2-bs3-modal
+80 verbose tar unpack /Users/stefania/.npm/ng2-bs3-modal/0.6.0/package.tgz
+81 verbose tar unpacking to /Users/stefania/projects/variousJavascript/angular2-RegistryV1/node_modules/ng2-bs3-modal
+82 silly gentlyRm /Users/stefania/projects/variousJavascript/angular2-RegistryV1/node_modules/ng2-bs3-modal is being purged
+83 verbose gentlyRm don't care about contents; nuking /Users/stefania/projects/variousJavascript/angular2-RegistryV1/node_modules/ng2-bs3-modal
+84 silly gunzTarPerm modes [ '755', '644' ]
+85 silly gunzTarPerm extractEntry package.json
+86 silly gunzTarPerm extractEntry .npmignore
+87 silly gunzTarPerm extractEntry README.md
+88 silly gunzTarPerm extractEntry karma.conf.js
+89 silly gunzTarPerm extractEntry ng2-bs3-modal.js
+90 silly gunzTarPerm extractEntry bundles/ng2-bs3-modal.js
+91 silly gunzTarPerm extractEntry bundles/ng2-bs3-modal.min.js
+92 silly gunzTarPerm extractEntry components/modal-body.js
+93 silly gunzTarPerm extractEntry components/modal-footer.js
+94 silly gunzTarPerm extractEntry components/modal-header.js
+95 silly gunzTarPerm extractEntry components/modal-instance.js
+96 silly gunzTarPerm extractEntry components/modal.js
+97 silly gunzTarPerm extractEntry components/modal-body.d.ts
+98 silly gunzTarPerm extractEntry components/modal-footer.d.ts
+99 silly gunzTarPerm extractEntry components/modal-header.d.ts
+100 silly gunzTarPerm extractEntry components/modal-instance.d.ts
+101 silly gunzTarPerm extractEntry components/modal.d.ts
+102 silly gunzTarPerm extractEntry directives/autofocus.js
+103 silly gunzTarPerm extractEntry directives/autofocus.d.ts
+104 silly gunzTarPerm extractEntry ng2-bs3-modal.d.ts
+105 silly gunzTarPerm extractEntry .travis.yml
+106 silly gunzTarPerm extractEntry typings/browser/ambient/es6-shim/index.d.ts
+107 silly gunzTarPerm extractEntry typings/browser/ambient/jasmine/index.d.ts
+108 silly gunzTarPerm extractEntry typings/browser.d.ts
+109 silly gunzTarPerm extractEntry typings/main/ambient/es6-shim/index.d.ts
+110 silly gunzTarPerm extractEntry typings/main/ambient/jasmine/index.d.ts
+111 silly gunzTarPerm extractEntry typings/main.d.ts
+112 silly gunzTarPerm extractEntry LICENSE.md
+113 silly gunzTarPerm extractEntry src/ng2-bs3-modal/components/modal-body.ts
+114 silly gunzTarPerm extractEntry src/ng2-bs3-modal/components/modal-footer.ts
+115 silly gunzTarPerm extractEntry src/ng2-bs3-modal/components/modal-header.ts
+116 silly gunzTarPerm extractEntry src/ng2-bs3-modal/components/modal-instance.ts
+117 silly gunzTarPerm extractEntry src/ng2-bs3-modal/components/modal.ts
+118 silly gunzTarPerm extractEntry src/ng2-bs3-modal/directives/autofocus.ts
+119 silly gunzTarPerm extractEntry src/ng2-bs3-modal/ng2-bs3-modal.ts
+120 silly gunzTarPerm extractEntry typings.json
+121 verbose write writing to /Users/stefania/projects/variousJavascript/angular2-RegistryV1/node_modules/ng2-bs3-modal/package.json
+122 info preinstall ng2-bs3-modal@0.6.0
+123 verbose readDependencies loading dependencies from /Users/stefania/projects/variousJavascript/angular2-RegistryV1/node_modules/ng2-bs3-modal/package.json
+124 verbose readDependencies loading dependencies from /Users/stefania/projects/variousJavascript/angular2-RegistryV1/node_modules/ng2-bs3-modal/package.json
+125 silly install resolved []
+126 verbose about to build /Users/stefania/projects/variousJavascript/angular2-RegistryV1/node_modules/ng2-bs3-modal
+127 info build /Users/stefania/projects/variousJavascript/angular2-RegistryV1/node_modules/ng2-bs3-modal
+128 info linkStuff ng2-bs3-modal@0.6.0
+129 silly linkStuff ng2-bs3-modal@0.6.0 has /Users/stefania/projects/variousJavascript/angular2-RegistryV1/node_modules as its parent node_modules
+130 verbose linkBins ng2-bs3-modal@0.6.0
+131 verbose linkMans ng2-bs3-modal@0.6.0
+132 verbose rebuildBundles ng2-bs3-modal@0.6.0
+133 info install ng2-bs3-modal@0.6.0
+134 info postinstall ng2-bs3-modal@0.6.0
+135 verbose unlock done using /Users/stefania/.npm/_locks/ng2-bs3-modal-fc2afd563886cea0.lock for /Users/stefania/projects/variousJavascript/angular2-RegistryV1/node_modules/ng2-bs3-modal
+136 verbose validateInstall loading /Users/stefania/projects/variousJavascript/angular2-RegistryV1/package.json for validation
+137 verbose stack Error: The package rxjs@5.0.0-beta.2 does not satisfy its siblings' peerDependencies requirements!
+137 verbose stack     at /opt/local/lib/node_modules/npm/lib/install.js:125:32
+137 verbose stack     at /opt/local/lib/node_modules/npm/lib/install.js:268:7
+137 verbose stack     at /opt/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
+137 verbose stack     at /opt/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+137 verbose stack     at cb (/opt/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+137 verbose stack     at /opt/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+137 verbose stack     at cb (/opt/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+137 verbose stack     at /opt/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+137 verbose stack     at cb (/opt/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+137 verbose stack     at /opt/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+138 verbose cwd /Users/stefania/projects/variousJavascript/angular2-RegistryV1
+139 error Darwin 14.5.0
+140 error argv "/opt/local/bin/node" "/opt/local/bin/npm" "install" "--save" "ng2-bs3-modal"
+141 error node v4.3.0
+142 error npm  v2.14.18
+143 error code EPEERINVALID
+144 error peerinvalid The package rxjs@5.0.0-beta.2 does not satisfy its siblings' peerDependencies requirements!
+144 error peerinvalid Peer angular2@2.0.0-beta.14 wants rxjs@5.0.0-beta.2
+145 verbose exit [ 1, true ]

@@ -1,0 +1,79 @@
+<div id="wrapper">
+    <div id="sidebar-default" class="main-sidebar">
+        <div class="current-user">
+            <a class="name" href="http://www.openminted.eu">
+                <img width="100%" src="http://openminted.eu/wp-content/uploads/2016/02/OpenMINTED_Tag_Color.png" alt="OpenMinted">
+            </a>
+        </div>
+        <div class="menu-section">
+            <h3>General</h3>
+            <ul>
+                <li>
+                    <a [routerLink]="['Dashboard']">
+                        <i class="fa fa-globe"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['Configuration']">
+                        <i class="fa fa-cog"></i>
+                        <span>Configuration</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-section">
+            <h3>Contents</h3>
+            <ul>
+                <li>
+                    <a [routerLink]="['ResourceType']">
+                        <i class="fa fa-folder"></i>
+                        <span>Resource Types</span>
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['Resource']">
+                        <i class="fa fa-file"></i>
+                        <span>Resources</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-section">
+            <h3>API Documentation</h3>
+            <ul>
+                <li>
+                    <a [routerLink]="['APIOverview']">
+                        <i class="fa fa-file-text"></i>
+                        <span>Overview</span>
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['APIResourceTypesDocumentation']">
+                        <i class="fa fa-folder-o"></i>
+                        <span>Resource Types</span>
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['APIResourcesDocumentation']">
+                        <i class="fa fa-file-o"></i>
+                        <span>Resources</span>
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['APISearchDocumentation']">
+                        <i class="fa fa-search"></i>
+                        <span>Search</span>
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['APIVersionsDocumentation']">
+                        <i class="fa fa-files-o"></i>
+                        <span>Versions</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <router-outlet></router-outlet>
+</div>
