@@ -1,3 +1,12 @@
 #users #content .content-wrapper .users-list .headers .header label {
     height: auto;
 }
+
+#users #content .content-wrapper .users-list .headers .header label span {
+    background: #fff none repeat scroll 0 0;
+    color: #333;
+    display: block;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.14s linear 0s;
+}

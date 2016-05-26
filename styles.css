@@ -33,6 +33,19 @@
   margin-left: 140px;
 }
 
+#dashboard #content .page-title {
+  border-right: 1px solid #e6e6e6;
+  bottom: 0;
+  color: #7e7e7e;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  padding: 20px 30px;
+  position: absolute;
+  text-transform: uppercase;
+  top: 0;
+}
+
 /*#users #content .page-title {
   !*color: #ff6600;*!
   color: #003f3c;

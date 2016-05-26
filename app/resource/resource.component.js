@@ -12,6 +12,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Created by stefania on 4/11/16.
  */
 var core_1 = require('@angular/core');
+var router_deprecated_1 = require('@angular/router-deprecated');
+var resource_list_component_1 = require("./resource-list.component");
+var resource_detail_component_1 = require("./resource-detail.component");
 var ResourceComponent = (function () {
     function ResourceComponent() {
     }
@@ -19,7 +22,21 @@ var ResourceComponent = (function () {
         core_1.Component({
             selector: 'resource',
             templateUrl: 'app/resource/resource.component.html',
-        }), 
+            directives: [router_deprecated_1.RouterOutlet],
+        }),
+        router_deprecated_1.RouteConfig([
+            {
+                path: '/',
+                name: 'ResourceList',
+                component: resource_list_component_1.ResourceListComponent,
+                useAsDefault: true
+            },
+            {
+                path: '/detail/:resourceType/:id',
+                name: 'ResourceDetails',
+                component: resource_detail_component_1.ResourceDetailsComponent,
+            },
+        ]), 
         __metadata('design:paramtypes', [])
     ], ResourceComponent);
     return ResourceComponent;

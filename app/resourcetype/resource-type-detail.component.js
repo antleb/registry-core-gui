@@ -22,9 +22,7 @@ var ResourceTypeDetailsComponent = (function () {
     ResourceTypeDetailsComponent.prototype.ngOnInit = function () {
         var _this = this;
         var name = this.routeParams.get('name');
-        this.resourceTypeService.getResourceType(name).subscribe(function (resourceType) { return _this.resourceType = resourceType; }, 
-        // resourceTypes => this.resourceTypes = resourceTypes,
-        function (error) { return _this.errorMessage = error; });
+        this.resourceTypeService.getResourceType(name).subscribe(function (resourceType) { return _this.resourceType = resourceType; }, function (error) { return _this.errorMessage = error; });
     };
     ResourceTypeDetailsComponent.prototype.goBack = function () {
         window.history.back();
@@ -33,6 +31,7 @@ var ResourceTypeDetailsComponent = (function () {
         core_1.Component({
             selector: 'resource-type-detail',
             templateUrl: 'app/resourcetype/resource-type-detail.component.html',
+            styleUrls: ['app/resourcetype/resource-type-detail.component.css']
         }), 
         __metadata('design:paramtypes', [resource_type_service_1.ResourceTypeService, router_deprecated_1.RouteParams])
     ], ResourceTypeDetailsComponent);

@@ -50,7 +50,7 @@ var AppComponent = (function () {
                 component: resource_type_component_1.ResourceTypeComponent,
             },
             {
-                path: '/resource',
+                path: '/resource/...',
                 name: 'Resource',
                 component: resource_component_1.ResourceComponent,
             },
@@ -79,21 +79,6 @@ var AppComponent = (function () {
                 name: 'APIVersionsDocumentation',
                 component: api_versions_component_1.APIVersionsComponent,
             },
-            // {
-            //     path: '/detail/:name',
-            //     name: 'ResourceTypeDetails',
-            //     component: ResourceTypeDetailsComponent,
-            // },
-            // {
-            //   path: '/resourceType/detail/:name',
-            //   name: 'ResourceTypeDetails',
-            //   component: ResourceTypeDetailsComponent
-            // },
-            /*{
-             path: '/detail/:id',
-             name: 'HeroDetail',
-             component: HeroDetailComponent
-             },*/
             {
                 path: '/**',
                 redirectTo: ['Dashboard']

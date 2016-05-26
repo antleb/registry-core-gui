@@ -4,6 +4,7 @@ import { ROUTER_PROVIDERS } from '@angular/router-deprecated';
 import 'rxjs/Rx';
 import { ResourceTypeService } from './resourcetype/resource-type.service';
 import { HTTP_PROVIDERS } from '@angular/http';
+import { ResourceService } from "./resource/resource.service";
 
-bootstrap(AppComponent, [ROUTER_PROVIDERS, ResourceTypeService, HTTP_PROVIDERS]);
+bootstrap(AppComponent, [ROUTER_PROVIDERS, ResourceTypeService, ResourceService, HTTP_PROVIDERS]);
 

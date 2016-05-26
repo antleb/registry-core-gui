@@ -2,11 +2,8 @@
  * Created by stefania on 4/8/16.
  */
 
-import { Component, OnInit } from '@angular/core';
-import { ResourceType } from './resource-type';
-import { ResourceTypeService } from './resource-type.service';
-import { ResourceTypePage } from './resource-type-page';
-import { RouteConfig, Router, RouterOutlet } from '@angular/router-deprecated';
+import { Component } from '@angular/core';
+import { RouteConfig, RouterOutlet } from '@angular/router-deprecated';
 import { ResourceTypeDetailsComponent } from "./resource-type-detail.component";
 import { ResourceTypeListComponent } from "./resource-type-list.component";
 
@@ -14,10 +11,6 @@ import { ResourceTypeListComponent } from "./resource-type-list.component";
     selector: 'resource-type',
     templateUrl: 'app/resourcetype/resource-type.component.html',
     directives: [RouterOutlet],
-    // providers: [
-    //     // ResourceTypeService,
-    //     HTTP_PROVIDERS,
-    // ],
 })
 
 @RouteConfig([

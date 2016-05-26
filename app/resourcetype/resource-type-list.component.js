@@ -25,18 +25,15 @@ var ResourceTypeListComponent = (function () {
     ResourceTypeListComponent.prototype.getResourceTypes = function () {
         var _this = this;
         this._resourceTypeService.getResourceTypes().subscribe(function (resourceTypePage) { return _this.resourceTypePage = resourceTypePage; }, function (error) { return _this.errorMessage = error; });
-        // console.log(this.resourceTypePage);
     };
     ResourceTypeListComponent.prototype.gotoDetail = function (resourceType) {
         this.selectedResourceType = resourceType;
-        // console.log(this.selectedResourceType);
         var link = ['ResourceTypeDetails', { name: resourceType.name }];
-        // console.log(link);
         this.router.navigate(link);
     };
     ResourceTypeListComponent = __decorate([
         core_1.Component({
-            selector: 'resource-type-detail',
+            selector: 'resource-type-list',
             templateUrl: 'app/resourcetype/resource-type-list.component.html',
         }), 
         __metadata('design:paramtypes', [router_deprecated_1.Router, resource_type_service_1.ResourceTypeService])

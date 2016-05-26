@@ -1,0 +1,69 @@
+<div id="users">
+    <div id="content">
+        <div class="menubar fixed">
+            <div class="sidebar-toggler visible-xs">
+                <i class="ion-navicon"></i>
+            </div>
+
+            <div class="page-title">Resources</div>
+            <a class="new-user btn btn-success pull-right" (click)="modal.open()">
+                <span>New resource</span>
+            </a>
+        </div>
+
+        <div class="content-wrapper">
+            <p>Here you will be able to browse resources, add new ones and edit/delete existing ones.</p>
+
+            <div class="error" *ngIf="errorMessage">{{errorMessage}}</div>
+
+            <div class="row users-list" *ngIf="resourcePage">
+                <div class="col-md-12">
+                    <div class="row headers">
+                        <div class="col-sm-1 header select-users">
+                            <input type="checkbox">
+                        </div>
+                        <div class="col-sm-3 header hidden-xs">
+                            <label><span>Id</span></label>
+                        </div>
+                        <div class="col-sm-2 header hidden-xs">
+                            <label><span>Resource Type</span></label>
+                        </div>
+                        <div class="col-sm-2 header hidden-xs">
+                            <label><span>Creation Date</span></label>
+                        </div>
+                        <div class="col-sm-3 header hidden-xs">
+                            <label><span>Indexed Fields</span></label>
+                        </div>
+                        <div class="col-sm-1 header hidden-xs">
+                            <label><span>Actions</span></label>
+                        </div>
+                    </div>
+                    <div class="row user" *ngFor="let resource of resourcePage.results">
+                        <div class="col-sm-1 avatar">
+                            <input type="checkbox" name="select-user">
+                        </div>
+                        <div class="col-sm-3">
+                            <div>{{resource.id}}</div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div>{{resource.resourceType}}</div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div>{{resource.creationDate | date:'medium' }}</div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div>
+                                <span *ngFor="let indexedField of resource.indexedFields; let isLast=last">
+                                    <b>{{indexedField.name}}:</b> {{indexedField.value}}{{isLast ? '' : ', '}}
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-sm-1">
+                            <div><a (click)="gotoDetail(resource)">Details</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

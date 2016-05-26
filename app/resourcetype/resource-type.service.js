@@ -1,3 +1,6 @@
+/**
+ * Created by stefania on 4/11/16.
+ */
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -8,20 +11,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-/**
- * Created by stefania on 4/11/16.
- */
 var core_1 = require('@angular/core');
 var http_1 = require('@angular/http');
 var Observable_1 = require('rxjs/Observable');
 var ResourceTypeService = (function () {
     function ResourceTypeService(http) {
         this.http = http;
-        this._resourceTypesUrl = 'http://83.212.96.150:8080/RegistryService/resourceType/';
+        // private _resourceTypesUrl = 'http://83.212.96.150:8080/RegistryService/resourceType/';
+        this._resourceTypesUrl = 'http://192.168.1.25:8080/registry/resourceType/';
     }
-    // private _resourceTypesUrl = 'app/resourceTypePage';
-    // private _resourceTypesUrl = 'app/resourceTypes';
-    // private _resourceTypesUrl = 'app/resourcetype/mock-resource-types.json';
     ResourceTypeService.prototype.getResourceTypes = function () {
         return this.http.get(this._resourceTypesUrl)
             .map(function (res) { return res.json(); })

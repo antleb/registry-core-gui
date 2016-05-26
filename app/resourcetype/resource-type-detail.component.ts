@@ -2,7 +2,7 @@
  * Created by stefania on 5/17/16.
  */
 
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ResourceType } from './resource-type';
 import { RouteParams } from '@angular/router-deprecated';
 import { ResourceTypeService } from './resource-type.service';
@@ -10,6 +10,7 @@ import { ResourceTypeService } from './resource-type.service';
 @Component({
     selector: 'resource-type-detail',
     templateUrl: 'app/resourcetype/resource-type-detail.component.html',
+    styleUrls: ['app/resourcetype/resource-type-detail.component.css']
 })
 
 export class ResourceTypeDetailsComponent implements OnInit {
@@ -28,7 +29,6 @@ export class ResourceTypeDetailsComponent implements OnInit {
 
         this.resourceTypeService.getResourceType(name).subscribe(
             resourceType => this.resourceType = resourceType,
-            // resourceTypes => this.resourceTypes = resourceTypes,
             error =>  this.errorMessage = <any>error);
     }
 
@@ -36,6 +36,4 @@ export class ResourceTypeDetailsComponent implements OnInit {
     goBack() {
         window.history.back();
     }
-
-    // @Input() resourceType: ResourceType;
 }

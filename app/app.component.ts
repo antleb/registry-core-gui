@@ -14,16 +14,11 @@ import { APIResourcesComponent } from "./api/api-resources.component";
 import { APIResourceTypesComponent } from "./api/api-resource-types.component";
 import { APISearchComponent } from "./api/api-search.component";
 import { APIVersionsComponent } from "./api/api-versions.component";
-import { ResourceTypeDetailsComponent } from "./resourcetype/resource-type-detail.component";
 
 @Component({
   selector: 'metadata-registry-service',
   templateUrl: 'app/app.component.html',
   directives: [ROUTER_DIRECTIVES],
-  // providers: [
-  //     HeroService
-  // ],
-  /*styleUrls: ['app/app.component.css']*/
 })
 
 @RouteConfig([
@@ -44,7 +39,7 @@ import { ResourceTypeDetailsComponent } from "./resourcetype/resource-type-detai
     component: ResourceTypeComponent,
   },
   {
-    path: '/resource',
+    path: '/resource/...',
     name: 'Resource',
     component: ResourceComponent,
   },
@@ -73,21 +68,6 @@ import { ResourceTypeDetailsComponent } from "./resourcetype/resource-type-detai
     name: 'APIVersionsDocumentation',
     component: APIVersionsComponent,
   },
-  // {
-  //     path: '/detail/:name',
-  //     name: 'ResourceTypeDetails',
-  //     component: ResourceTypeDetailsComponent,
-  // },
-  // {
-  //   path: '/resourceType/detail/:name',
-  //   name: 'ResourceTypeDetails',
-  //   component: ResourceTypeDetailsComponent
-  // },
-  /*{
-   path: '/detail/:id',
-   name: 'HeroDetail',
-   component: HeroDetailComponent
-   },*/
   {
     path: '/**',
     redirectTo: ['Dashboard']
@@ -95,7 +75,6 @@ import { ResourceTypeDetailsComponent } from "./resourcetype/resource-type-detai
 ])
 
 export class AppComponent {
-
   title = 'Metadata Registry Service';
 }
 
