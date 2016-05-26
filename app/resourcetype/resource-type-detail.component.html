@@ -1,0 +1,23 @@
+<div class="menubar">
+    <div class="sidebar-toggler visible-xs">
+        <i class="ion-navicon"></i>
+    </div>
+
+    <div class="page-title">
+        View existing resource type details
+        <small class="hidden-xs">
+            <strong>This form has validation</strong>
+        </small>
+    </div>
+</div>
+
+<div class="content-wrapper">
+    <div *ngIf="resourceType">
+        <h2>{{resourceType.name}} details</h2>
+        <div>
+            <label>id: </label>{{resourceType.id}}
+        </div>
+        <button (click)="goBack()">Back</button>
+    </div>
+</div>
+

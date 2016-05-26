@@ -1,10 +1,5 @@
-System.register([], function(exports_1, context_1) {
-    "use strict";
-    var __moduleName = context_1 && context_1.id;
-    return {
-        setters:[],
-        execute: function() {
-        }
-    }
-});
+/**
+ * Created by stefania on 5/16/16.
+ */
+"use strict";
 //# sourceMappingURL=resource-type-page.js.map

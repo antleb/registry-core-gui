@@ -7,6 +7,6 @@ export interface ResourceType {
     schema: string;
     schemaUrl: string;
     payloadType: string;
-    creationDate: string;
-    modificationDate: string;
+    creationDate: Date;
+    modificationDate: Date;
 }

@@ -1,6 +1,7 @@
 /**
  * Created by stefania on 4/11/16.
  */
+    
 export class ResourceTypeData {
     createDb() {
         // let resourceTypes = [

@@ -1,11 +1,11 @@
 /**
  * Created by stefania on 4/11/16.
  */
-import { Injectable } from "angular2/core";
-import {Http, Response} from "angular2/http";
-import {ResourceType} from "./resource-type";
-import {Observable} from "rxjs/Observable";
-import {ResourceTypePage} from "./resource-type-page";
+import { Injectable } from '@angular/core';
+import { Http, Response } from '@angular/http';
+import { ResourceType } from './resource-type';
+import { Observable } from 'rxjs/Observable';
+import { ResourceTypePage } from './resource-type-page';
 
 
 @Injectable()
