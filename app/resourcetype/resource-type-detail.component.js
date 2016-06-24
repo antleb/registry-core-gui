@@ -30,8 +30,7 @@ var ResourceTypeDetailsComponent = (function () {
     ResourceTypeDetailsComponent = __decorate([
         core_1.Component({
             selector: 'resource-type-detail',
-            templateUrl: 'app/resourcetype/resource-type-detail.component.html',
-            styleUrls: ['app/resourcetype/resource-type-detail.component.css']
+            templateUrl: 'app/resourcetype/resource-type-detail.component.html'
         }), 
         __metadata('design:paramtypes', [resource_type_service_1.ResourceTypeService, router_deprecated_1.RouteParams])
     ], ResourceTypeDetailsComponent);

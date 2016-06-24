@@ -1,0 +1,66 @@
+<form role="form" action="#" method="post" class="form-horizontal" id="new-customer" novalidate="novalidate">
+    <div class="form-group">
+        <label class="col-sm-2 col-md-2 control-label">Resource Type</label>
+        <div class="col-sm-10 col-md-8">
+            <select class="form-control" required>
+                <option *ngFor="let resourceType of resourceTypes" [value]="resourceType.id">{{resourceType.name}}</option>
+                        <!--[(ngModel)]="resource.resourceType">{{resourceType.name}}-->
+
+            </select>
+            TODO: remove this: {{resource.resourceType}}
+        </div>
+    </div>
+    <div class="form-group" *ngIf="resource">
+        <label class="col-sm-2 col-md-2 control-label">Version</label>
+        <div class="col-sm-10 col-md-8 detail">
+            <span>{{resource.version}}</span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 col-md-2 control-label">Payload</label>
+        <div class="col-sm-10 col-md-8">
+            <textarea name="customer[notes]" rows="4" class="form-control" [(ngModel)]="resource.payload"></textarea>
+            TODO: remove this: {{resource.payload}}
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 col-md-2 control-label">Payload URL</label>
+        <div class="col-sm-10 col-md-8">
+            <input type="text" name="customer[last_name]" class="form-control" [(ngModel)]="resource.payloadUrl">
+            TODO: remove this: {{resource.payloadUrl}}
+        </div>
+    </div>
+    <div class="form-group" *ngIf="resource">
+        <label class="col-sm-2 col-md-2 control-label">Payload Format</label>
+        <div class="col-sm-10 col-md-8 detail">
+            <span>{{resource.payloadFormat}}</span>
+        </div>
+    </div>
+    <div class="form-group" *ngIf="resource">
+        <label class="col-sm-2 col-md-2 control-label">Creation Date</label>
+        <div class="col-sm-10 col-md-8 detail">
+            <span>{{resource.creationDate | date:'medium' }}</span>
+        </div>
+    </div>
+    <div class="form-group" *ngIf="resource">
+        <label class="col-sm-2 col-md-2 control-label">Modification Date</label>
+        <div class="col-sm-10 col-md-8 detail">
+            <span>{{resource.modificationDate | date:'medium' }}</span>
+        </div>
+    </div>
+    <div class="form-group" *ngIf="resource && resource.indexedFields.length > 0">
+        <label class="col-sm-2 col-md-2 control-label">Indexed Fields</label>
+        <div class="col-sm-10 col-md-8 detail" *ngFor="let indexedField of resource.indexedFields;
+                        let index=index" [class.col-sm-offset-2]="index != 0">
+            <span>{{indexedField.name}}</span>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+            <span>{{indexedField.values}}</span>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+            <span>{{indexedField.type}}</span>
+        </div>
+    </div>
+    <div class="form-group form-actions">
+        <div class="col-sm-offset-2 col-sm-10">
+            <a class="btn btn-default" (click)="goBack()">Back</a>
+            <button class="btn btn-success" type="submit">Save resource</button>
+        </div>
+    </div>
+</form>

@@ -13,8 +13,8 @@ export class ResourceService {
 
     constructor (private http: Http) {}
 
-    // private _resourcesUrl = 'http://83.212.96.150:8080/RegistryService/resources/';
-    private _resourcesUrl = 'http://192.168.1.25:8080/registry/resources/';
+    private _resourcesUrl = 'http://83.212.96.150:8080/RegistryService/resources/';
+    // private _resourcesUrl = 'http://192.168.1.25:8080/registry/resources/';
 
     getResources() {
         return this.http.get(this._resourcesUrl)

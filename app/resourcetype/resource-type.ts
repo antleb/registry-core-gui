@@ -5,7 +5,6 @@
 import {IndexFields} from "./index-fields";
 
 export interface ResourceType {
-    id: string;
     name: string;
     schema: string;
     schemaUrl: string;

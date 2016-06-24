@@ -1,6 +1,3 @@
-/**
- * Created by stefania on 5/26/16.
- */
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -11,33 +8,39 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+/**
+ * Created by stefania on 5/26/16.
+ */
 var core_1 = require('@angular/core');
 var router_deprecated_1 = require('@angular/router-deprecated');
 var resource_service_1 = require('./resource.service');
 var resource_form_component_1 = require("./resource-form.component");
-var ResourceDetailsComponent = (function () {
-    function ResourceDetailsComponent(resourceService, routeParams) {
+var NewResourceComponent = (function () {
+    function NewResourceComponent(resourceService, routeParams) {
         this.resourceService = resourceService;
         this.routeParams = routeParams;
     }
-    ResourceDetailsComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        var resourceType = this.routeParams.get('resourceType');
-        var id = this.routeParams.get('id');
-        this.resourceService.getResource(resourceType, id).subscribe(function (resource) { return _this.resource = resource; }, function (error) { return _this.errorMessage = error; });
-    };
-    ResourceDetailsComponent.prototype.goBack = function () {
+    // ngOnInit() {
+    //
+    //     let resourceType = this.routeParams.get('resourceType');
+    //     let id = this.routeParams.get('id');
+    //
+    //     this.resourceService.getResource(resourceType, id).subscribe(
+    //         resource => this.resource = resource,
+    //         error =>  this.errorMessage = <any>error);
+    // }
+    NewResourceComponent.prototype.goBack = function () {
         window.history.back();
     };
-    ResourceDetailsComponent = __decorate([
+    NewResourceComponent = __decorate([
         core_1.Component({
-            selector: 'resource-type-detail',
-            templateUrl: 'app/resource/resource-detail.component.html',
+            selector: 'new-resource',
+            templateUrl: 'app/resource/new-resource.component.html',
             directives: [resource_form_component_1.ResourceFormComponent]
         }), 
         __metadata('design:paramtypes', [resource_service_1.ResourceService, router_deprecated_1.RouteParams])
-    ], ResourceDetailsComponent);
-    return ResourceDetailsComponent;
+    ], NewResourceComponent);
+    return NewResourceComponent;
 }());
-exports.ResourceDetailsComponent = ResourceDetailsComponent;
-//# sourceMappingURL=resource-detail.component.js.map
+exports.NewResourceComponent = NewResourceComponent;
+//# sourceMappingURL=new-resource.component.js.map

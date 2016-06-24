@@ -1,3 +1,6 @@
+/**
+ * Created by stefania on 4/11/16.
+ */
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -8,13 +11,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-/**
- * Created by stefania on 4/11/16.
- */
 var core_1 = require('@angular/core');
 var router_deprecated_1 = require('@angular/router-deprecated');
 var resource_list_component_1 = require("./resource-list.component");
 var resource_detail_component_1 = require("./resource-detail.component");
+var new_resource_component_1 = require("./new-resource.component");
 var ResourceComponent = (function () {
     function ResourceComponent() {
     }
@@ -35,6 +36,11 @@ var ResourceComponent = (function () {
                 path: '/detail/:resourceType/:id',
                 name: 'ResourceDetails',
                 component: resource_detail_component_1.ResourceDetailsComponent,
+            },
+            {
+                path: '/new',
+                name: 'NewResource',
+                component: new_resource_component_1.NewResourceComponent,
             },
         ]), 
         __metadata('design:paramtypes', [])

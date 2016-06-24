@@ -9,8 +9,7 @@ import { ResourceTypeService } from './resource-type.service';
 
 @Component({
     selector: 'resource-type-detail',
-    templateUrl: 'app/resourcetype/resource-type-detail.component.html',
-    styleUrls: ['app/resourcetype/resource-type-detail.component.css']
+    templateUrl: 'app/resourcetype/resource-type-detail.component.html'
 })
 
 export class ResourceTypeDetailsComponent implements OnInit {

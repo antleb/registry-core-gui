@@ -6,7 +6,7 @@
             </div>
 
             <div class="page-title">Resources</div>
-            <a class="new-user btn btn-success pull-right" (click)="modal.open()">
+            <a class="new-user btn btn-success pull-right" (click)="addNewResource()">
                 <span>New resource</span>
             </a>
         </div>
@@ -54,7 +54,7 @@
                         <div class="col-sm-3">
                             <div>
                                 <span *ngFor="let indexedField of resource.indexedFields; let isLast=last">
-                                    <b>{{indexedField.name}}:</b> {{indexedField.value}}{{isLast ? '' : ', '}}
+                                    <b>{{indexedField.name}}:</b> {{indexedField.values}}{{isLast ? '' : ', '}}
                                 </span>
                             </div>
                         </div>

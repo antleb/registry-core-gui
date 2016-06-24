@@ -17,9 +17,9 @@ var Observable_1 = require('rxjs/Observable');
 var ResourceService = (function () {
     function ResourceService(http) {
         this.http = http;
-        // private _resourcesUrl = 'http://83.212.96.150:8080/RegistryService/resources/';
-        this._resourcesUrl = 'http://192.168.1.25:8080/registry/resources/';
+        this._resourcesUrl = 'http://83.212.96.150:8080/RegistryService/resources/';
     }
+    // private _resourcesUrl = 'http://192.168.1.25:8080/registry/resources/';
     ResourceService.prototype.getResources = function () {
         return this.http.get(this._resourcesUrl)
             .map(function (res) { return res.json(); })

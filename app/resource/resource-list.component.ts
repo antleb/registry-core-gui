@@ -38,4 +38,9 @@ export class ResourceListComponent implements OnInit {
         let link = ['ResourceDetails', {resourceType: resource.resourceType, id: resource.id }];
         this.router.navigate(link);
     }
+
+    addNewResource() {
+        let link = ['NewResource'];
+        this.router.navigate(link);
+    }
 }

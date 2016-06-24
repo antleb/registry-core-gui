@@ -6,4 +6,5 @@ export interface IndexFields {
     name: string;
     path: string;
     type: string;
+    multivalued : Boolean;
 }

@@ -14,7 +14,8 @@
         </div>
 
         <div class="content-wrapper">
-            <div *ngIf="resource">
+            <resource-form *ngIf="resource" [resource]="resource"></resource-form>
+            <!--<div *ngIf="resource">
                 <form role="form" action="#" method="post" class="form-horizontal" id="new-customer" novalidate="novalidate">
                     <div class="form-group">
                         <label class="col-sm-2 col-md-2 control-label">Id</label>
@@ -79,7 +80,7 @@
                         </div>
                     </div>
                 </form>
-            </div>
+            </div>-->
         </div>
     </div>
 </div>

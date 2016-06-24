@@ -31,6 +31,10 @@ var ResourceListComponent = (function () {
         var link = ['ResourceDetails', { resourceType: resource.resourceType, id: resource.id }];
         this.router.navigate(link);
     };
+    ResourceListComponent.prototype.addNewResource = function () {
+        var link = ['NewResource'];
+        this.router.navigate(link);
+    };
     ResourceListComponent = __decorate([
         core_1.Component({
             selector: 'resource-list',

@@ -5,5 +5,5 @@
 export interface IndexedFields {
     name: string;
     type: string;
-    value: Object;
+    values: Object[];
 }
