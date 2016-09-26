@@ -1,0 +1,9 @@
+table {
+    font-size: 14px;
+}
+
+#form #content .form-horizontal .form-group .detail.indexFields {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 0px;
+}

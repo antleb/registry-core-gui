@@ -1,0 +1,7 @@
+.header.select-users input[type=checkbox] {
+    cursor: pointer;
+}
+
+.row a {
+    cursor: pointer;
+}

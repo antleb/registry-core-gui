@@ -1,8 +1,0 @@
-{
-  "data": [
-    {"id": "18", "name": "Person", "schema": "Schema for resource type Person", "schemaUrl": "http://www.bla.com",
-      "payloadType": "json", "creationDate": 1463663907537, "modificationDate": 1463663907537},
-    {"id": "19", "name": "Corpora", "schema": "Schema for resource type Corpora", "schemaUrl": "http://www.bla.com",
-      "payloadType": "xml", "creationDate": 1463663907537, "modificationDate": 1463663907537}
-  ]
-}
