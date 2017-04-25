@@ -17,7 +17,8 @@ var Rx_1 = require('rxjs/Rx');
 var ResourceService = (function () {
     function ResourceService(http) {
         this.http = http;
-        this._resourcesUrl = 'http://83.212.98.33:8080/RegistryService/resources/';
+        // private _resourcesUrl = 'http://83.212.98.33:8080/RegistryService/resources/';
+        this._resourcesUrl = 'http://83.212.101.85:8080/omtd-registry/resources/';
     }
     ResourceService.prototype.getResources = function () {
         return this.http.get(this._resourcesUrl)

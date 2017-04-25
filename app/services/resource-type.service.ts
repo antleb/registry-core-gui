@@ -14,7 +14,8 @@ export class ResourceTypeService {
 
     constructor (private http: Http) {}
 
-    private _resourceTypesUrl = 'http://83.212.98.33:8080/RegistryService/resourceType/';
+    // private _resourceTypesUrl = 'http://83.212.98.33:8080/RegistryService/resourceType/';
+    private _resourceTypesUrl = 'http://83.212.101.85:8080/omtd-registry/resourceType/';
 
     getResourceTypes() {
         return this.http.get(this._resourceTypesUrl)

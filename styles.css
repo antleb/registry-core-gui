@@ -80,3 +80,9 @@
 }
 
 /***********************************************/
+
+.btn-primary {
+  background-color: #00b9b4;
+  border-color: #18aba6;
+  color: #fff;
+}

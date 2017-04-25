@@ -17,7 +17,8 @@ var Rx_1 = require('rxjs/Rx');
 var ResourceTypeService = (function () {
     function ResourceTypeService(http) {
         this.http = http;
-        this._resourceTypesUrl = 'http://83.212.98.33:8080/RegistryService/resourceType/';
+        // private _resourceTypesUrl = 'http://83.212.98.33:8080/RegistryService/resourceType/';
+        this._resourceTypesUrl = 'http://83.212.101.85:8080/omtd-registry/resourceType/';
     }
     ResourceTypeService.prototype.getResourceTypes = function () {
         return this.http.get(this._resourceTypesUrl)

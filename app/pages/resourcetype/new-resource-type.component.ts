@@ -7,6 +7,7 @@ import { ResourceType } from "../../domain/resource-type";
 @Component({
     selector: 'new-resource-type',
     templateUrl: 'app/pages/resourcetype/new-resource-type.component.html',
+    styleUrls:  ['app/pages/resourcetype/new-resource-type.component.css'],
 })
 
 export class NewResourceTypeComponent {

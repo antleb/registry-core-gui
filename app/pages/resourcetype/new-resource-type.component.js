@@ -35,6 +35,7 @@ var NewResourceTypeComponent = (function () {
         core_1.Component({
             selector: 'new-resource-type',
             templateUrl: 'app/pages/resourcetype/new-resource-type.component.html',
+            styleUrls: ['app/pages/resourcetype/new-resource-type.component.css'],
         }), 
         __metadata('design:paramtypes', [])
     ], NewResourceTypeComponent);
